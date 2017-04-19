@@ -1,9 +1,14 @@
-# api documentation for  [gulp-regex-replace (v0.2.3)](http://github.com/mikrofusion/gulp-regex-replace)  [![npm package](https://img.shields.io/npm/v/npmdoc-gulp-regex-replace.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-gulp-regex-replace) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-gulp-regex-replace.svg)](https://travis-ci.org/npmdoc/node-npmdoc-gulp-regex-replace)
+# npmdoc-gulp-regex-replace
+
+#### api documentation for  [gulp-regex-replace (v0.2.3)](http://github.com/mikrofusion/gulp-regex-replace)  [![npm package](https://img.shields.io/npm/v/npmdoc-gulp-regex-replace.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-gulp-regex-replace) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-gulp-regex-replace.svg)](https://travis-ci.org/npmdoc/node-npmdoc-gulp-regex-replace)
+
 #### Replace your code using regular expressions.
 
-[![NPM](https://nodei.co/npm/gulp-regex-replace.png?downloads=true)](https://www.npmjs.com/package/gulp-regex-replace)
+[![NPM](https://nodei.co/npm/gulp-regex-replace.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/gulp-regex-replace)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-gulp-regex-replace/build/screenCapture.buildNpmdoc.browser._2Fhome_2Ftravis_2Fbuild_2Fnpmdoc_2Fnode-npmdoc-gulp-regex-replace_2Ftmp_2Fbuild_2Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-gulp-regex-replace/build/apidoc.html)
+- [https://npmdoc.github.io/node-npmdoc-gulp-regex-replace/build/apidoc.html](https://npmdoc.github.io/node-npmdoc-gulp-regex-replace/build/apidoc.html)
+
+[![apidoc](https://npmdoc.github.io/node-npmdoc-gulp-regex-replace/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-gulp-regex-replace/build/apidoc.html)
 
 ![npmPackageListing](https://npmdoc.github.io/node-npmdoc-gulp-regex-replace/build/screenCapture.npmPackageListing.svg)
 
@@ -17,8 +22,7 @@
 
 {
     "author": {
-        "name": "Mike Groseclose",
-        "email": "mikegroseclose@gmail.com"
+        "name": "Mike Groseclose"
     },
     "bugs": {
         "url": "https://github.com/mikrofusion/gulp-regex-replace/issues"
@@ -60,13 +64,11 @@
     "main": "index.js",
     "maintainers": [
         {
-            "name": "mikrofusion",
-            "email": "mike.groseclose@gmail.com"
+            "name": "mikrofusion"
         }
     ],
     "name": "gulp-regex-replace",
     "optionalDependencies": {},
-    "readme": "ERROR: No README data found!",
     "repository": {
         "type": "git",
         "url": "git://github.com/mikrofusion/gulp-regex-replace.git"
@@ -77,16 +79,6 @@
     "version": "0.2.3"
 }
 ```
-
-
-
-# <a name="apidoc.tableOfContents"></a>[table of contents](#apidoc.tableOfContents)
-
-#### [module gulp-regex-replace](#apidoc.module.gulp-regex-replace)
-
-
-
-# <a name="apidoc.module.gulp-regex-replace"></a>[module gulp-regex-replace](#apidoc.module.gulp-regex-replace)
 
 
 
