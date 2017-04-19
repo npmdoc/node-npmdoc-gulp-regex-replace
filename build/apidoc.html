@@ -61,12 +61,70 @@
 
     <li class="apidocModuleLi"><a href="#apidoc.module.gulp-regex-replace">module gulp-regex-replace</a><ol>
 
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.gulp-regex-replace.gulp-regex-replace">
+            function <span class="apidocSignatureSpan"></span>gulp-regex-replace
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
     </ol></li>
 
 </ol></div>
 
 <div class="apidocSectionDiv">
 <h1><a href="#apidoc.module.gulp-regex-replace" id="apidoc.module.gulp-regex-replace">module gulp-regex-replace</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.gulp-regex-replace.gulp-regex-replace" id="apidoc.element.gulp-regex-replace.gulp-regex-replace">
+        function <span class="apidocSignatureSpan"></span>gulp-regex-replace
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">gulp-regex-replace = function (options) {
+  if(!(options instanceof Array)) {
+    options = [options];
+  }
+
+  options.forEach(function(element, index, array) {
+    if (element == void 0) { element = {}; }
+    if (element.replace == void 0) { element.replace = &#x27;&#x27;; }
+  });
+
+  return through.obj(function(file, enc, callback) {
+    if (!(&#x27;contents&#x27; in file)) {
+      this.push(file);
+      return callback();
+    } else if (file.isNull()) {
+      this.push(file);
+      return callback();
+    } else if (file.isStream()) {
+      throw new gutil.PluginError(&#x27;gulp-regex-replace&#x27;, &#x27;streams not implemented&#x27;);
+    } else if (file.isBuffer()) {
+      var contents = String(file.contents);
+
+      options.forEach(function(element, index, array) {
+        if(contents == null) {
+          throw new gutil.PluginError(&#x27;gulp-regex-replace&#x27;, &#x27;contents is null&#x27;);
+        }
+
+        contents = convertString(contents, element.regex, element.replace, element.exclude);
+      });
+
+      file.contents = new Buffer(contents);
+    }
+
+    this.push(file);
+    return callback();
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
 
 </div>
 
